@@ -1,0 +1,23 @@
+{
+  "name": "MoMo Bot",
+  "version": "1.0.2",
+  "slug": "momo_bot",
+  "description": "Un bot de Telegram para consultar los datos del sistema MoMo del ISCIII",
+  "url": "https://github.com/perico85/momo_bot_addon",
+  "arch": ["aarch64", "amd64", "armhf", "armv7"],
+  "boot": "auto",
+  "init": false,
+  "advanced": true,
+  "options": {
+    "BOT_TOKEN": "",
+    "LOG_LEVEL": "info"
+  },
+  "schema": {
+    "BOT_TOKEN": "str",
+    "LOG_LEVEL": "match(^(trace|debug|info|warning|error|fatal)$)?"
+  },
+  "map": ["data:rw"],
+  "environment": {
+    "LOG_LEVEL": "{{LOG_LEVEL}}"
+  }
+}
