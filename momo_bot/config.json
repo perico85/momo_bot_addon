@@ -4,7 +4,7 @@
   "slug": "momo_bot",
   "description": "Un bot de Telegram para consultar los datos del sistema MoMo del ISCIII",
   "url": "https://github.com/perico85/momo_bot_addon",
-  "arch": ["aarch64", "amd64", "armhf", "armv7"],
+  "arch": ["aarch64", "amd64", "armhf", "armv7", "arm64"],
   "boot": "auto",
   "init": false,
   "advanced": true,
